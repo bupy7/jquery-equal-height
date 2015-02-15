@@ -2,4 +2,7 @@
     "name": "jquery-equal-height",
     "version": "1.0",
     "main": "jquery-equal-height.js",
+    "ignore": [
+        ".gitignore"
+    ]
 }
