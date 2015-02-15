@@ -4,5 +4,6 @@
     "main": "jquery-equal-height.js",
     "ignore": [
         ".gitignore"
-    ]
+    ],
+    "homepage": "https://github.com/bupy7/jquery-equal-height"
 }
