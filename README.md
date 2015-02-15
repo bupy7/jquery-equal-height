@@ -11,29 +11,22 @@ Using the plugin
     of those you want to be equal, with a value that is the CSS selector
     of the elements that should be equal height
     
-        <ul data-equal-height='li'>
-          <li>Short<li>
-          <li>Short<li>
-          <li>Long, long, really long…<li>
-        </ul>
+    <ul data-equal-height='li'>
+        <li>Short<li>
+        <li>Short<li>
+        <li>Long, long, really long…<li>
+    </ul>
 
 1.  Include and invoke the plugin
 
-        <script src='af.equal-height.js'></script>
-        <script>
-          $('[data-equal-height]').make_children_equal_height();
-        </script>
+    <script src='query-equal-height.js'></script>
+    <script>$('[data-equal-height]').makeChildrenEqualHeight();</script>
 
 1.  Revoke the plugin
 
-        <script>
-          $('[data-equal-height]').make_children_disequal_height();
-        </script>
+    <script>$('[data-equal-height]').makeChildrenDisequalHeight();</script>
 
 1.  Optionally call the function again if the heights are likely to have
     changed (eg. if the browser is resized, the font is resized, etc.)
     
-    $('body').on(
-        'resize',
-        $('[data-equal-height]').make_children_equal_height()
-    );
+    $('body').on('resize', $('[data-equal-height]').makeChildrenEqualHeight());
