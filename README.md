@@ -4,6 +4,13 @@ Equal Height Children
 A jQuery plugin to make elements equal height. There are many plugins out there
 that do this, this one is ours.
 
+Install via Bower
+-----------------
+
+```
+bower install jquery-equal-height
+```
+
 Using the plugin
 ----------------
 
