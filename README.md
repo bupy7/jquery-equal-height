@@ -33,11 +33,7 @@ Using the plugin
 1.  Optionally call the function again if the heights are likely to have
     changed (eg. if the browser is resized, the font is resized, etc.)
     
-        $('body').on(
-            'resize',
-            $('[data-equal-height]').make_children_equal_height()
-        );
-
-A [live example][example] is available.
-
-[example]:http://code.artfinder.com/jquery-equal-height.html
+    $('body').on(
+        'resize',
+        $('[data-equal-height]').make_children_equal_height()
+    );
