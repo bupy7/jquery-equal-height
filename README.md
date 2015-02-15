@@ -11,11 +11,13 @@ Using the plugin
     of those you want to be equal, with a value that is the CSS selector
     of the elements that should be equal height
     
+    ```html
     <ul data-equal-height='li'>
         <li>Short<li>
         <li>Short<li>
         <li>Long, long, really long…<li>
     </ul>
+    ```
 
 1.  Include and invoke the plugin
 
