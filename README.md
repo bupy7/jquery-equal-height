@@ -19,14 +19,20 @@ Using the plugin
 
 1.  Include and invoke the plugin
 
+    ```html
     <script src='query-equal-height.js'></script>
     <script>$('[data-equal-height]').makeChildrenEqualHeight();</script>
-
+    ```
+    
 1.  Revoke the plugin
 
+    ```html
     <script>$('[data-equal-height]').makeChildrenDisequalHeight();</script>
+    ```
 
 1.  Optionally call the function again if the heights are likely to have
     changed (eg. if the browser is resized, the font is resized, etc.)
     
+    ```javascript
     $('body').on('resize', $('[data-equal-height]').makeChildrenEqualHeight());
+    ```
