@@ -1,5 +1,5 @@
 /** 
- * Artfinder Equal Height Children plugin
+ * Equal Height Children plugin
  *
  * https://github.com/bupy7/jquery-equal-height
  * version 1.0
@@ -8,45 +8,53 @@
 
 (function($) {
     
-    $.fn.make_children_equal_height = function () {
-        var make_equal_height = function (element) {
+    $.fn.makeChildrenEqualHeight = function() {
+        
+        var makeEqualHeight = function(element) {
+            
             var $within     = $(element),
                 selector    = $within.attr('data-equal-height'),
                 $children   = $(selector, $within),
                 tallest     = 0;
             
-            $children.each( function() {
+            $children.each(function() {
                 var $this = $(this);
                 
                 $this.css('height', ''); 
                 var h = $this.outerHeight();
-                if ( h > tallest ) {
+                if (h > tallest) {
                     tallest = h;
                 }
             });
             
-            $children.each( function() {
+            $children.each(function() {
                 $(this).css('height', tallest + 'px'); 
             });
+            
         };
         
-        return this.each( function () {
-            make_equal_height(this);
+        return this.each(function() {
+            makeEqualHeight(this);
         });
+        
     };
 	
-    $.fn.make_children_disequal_height = function () {
-        var make_disequal_height = function (element) {
+    $.fn.makeChildrenDisequalHeight = function() {
+        
+        var makeDisequalHeight = function(element) {
+            
             var $within     = $(element),
-            selector    = $within.attr('data-equal-height'),
-            $children   = $(selector, $within);
+            selector        = $within.attr('data-equal-height'),
+            $children       = $(selector, $within);
             $children.each(function() {
                 $(this).css('height', '');
             });
+            
         };
         return this.each( function () {
-                make_disequal_height(this);
+        	makeDisequalHeight(this);
         });
+        
     };
     
-})( jQuery );
+})(jQuery);
