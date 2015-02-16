@@ -5,5 +5,8 @@
     "ignore": [
         ".gitignore"
     ],
-    "homepage": "https://github.com/bupy7/jquery-equal-height"
+    "homepage": "https://github.com/bupy7/jquery-equal-height",
+    "dependencies": {
+        "jquery": ">= 1.9.1"
+    }
 }
